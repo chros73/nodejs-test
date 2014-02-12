@@ -1,0 +1,8 @@
+# MacOS X files
+.DS_Store
+
+# Idea
+.idea/
+.idea_modules/
+*.iml
+atlassian-ide-plugin.xml

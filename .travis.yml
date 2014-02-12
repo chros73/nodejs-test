@@ -1,0 +1,19 @@
+# Travis CI credentials
+
+language: node_js
+node_js:
+  - "0.11"
+
+env:
+  global:
+    - secure: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    - secure: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+      
+# Branches to build.
+branches:
+  only:
+    - master
+
+script: "./scripts/pushtester.sh"
+  
+#after_script: "./scripts/pushtester.sh"
